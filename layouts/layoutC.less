@@ -1,0 +1,43 @@
+@import '../core/reset.css';
+@import '../core/grid.less?t=20120119003';
+@import '../common.css';
+
+@columns:12;
+@columnwidth:60;
+@gutterwidth:60;
+@totalwidth:100%;
+
+header#top {
+	margin-bottom:1em;
+}
+
+#left {
+	.column(3);
+}
+
+#main {
+	.column(6);
+
+	#main-top,#main-content {
+		.row(6);
+		margin-bottom:0.5em;
+		background:silver;
+		padding:30px 0;
+	}
+}
+
+#sidebar {
+	.column(3);
+}
+
+footer#footer {
+	.row;
+	margin-top:1em;
+}
+
+@media screen and (max-width:720px) {
+	#main,#sidebar,#left {
+		.column(12);
+		margin-bottom:1em;
+	}
+}
