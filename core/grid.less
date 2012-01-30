@@ -18,9 +18,8 @@ body {
 	.clearfix;
 }
 
-.row(@columns:@columns) {
-	display:inline-block;
-	width:@totalwidth;
+.row(@x:@columns,@columns:@columns) {
+	.column(@x,@columns);
 	.clearfix;
 }
 
@@ -29,6 +28,12 @@ body {
 	float:left;
 	width:@totalwidth*((((@gutterwidth+@columnwidth)*@x)-@gutterwidth)/@gridsystemwidth);
 	margin:0 @totalwidth*((@gutterwidth*.5)/@gridsystemwidth);
+}
+
+.stretch {
+	display:inline-block;
+	width:100%;
+	.clearfix;
 }
 
 .offset(@offset:1) {
