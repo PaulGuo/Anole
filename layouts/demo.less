@@ -1,0 +1,61 @@
+@import '../core/reset.css';
+@import '../core/grid.less?t=20120120004';
+@import './common.css';
+
+@columns:12;
+@columnwidth:60;
+@gutterwidth:20;
+@totalwidth:980px;
+
+header#top {
+	margin-bottom:1em;
+}
+
+footer#footer {
+	.stretch;
+	margin-top:1em;
+}
+
+.wrapper {
+	width:@totalwidth;
+	padding:15px 0;
+	background:#fff;
+	.center;
+}
+
+.box {
+	font-family:Tahoma;
+	font-size:9px;
+	text-align:center;
+	background:#fee;
+	line-height:40px;
+	height:40px;	
+	margin-bottom:1em;
+}
+
+.box-a {.row(12);.box;}
+.box-b {.column(1);.box;}
+.box-c {.column(11);.box;}
+.box-d {.column(2);.box;}
+.box-e {.column(10);.box;}
+.box-f {.column(3);.box;}
+.box-g {.column(3);.box;}
+.box-h {.column(3);.box;}
+.box-i {.column(3);.box;}
+.box-j {.row(3);.box;}
+.box-k {.row(3);.box;.push(3);}
+.box-l {.row(3);.box;.push(6);}
+.box-m {.row(3);.box;.push(9);}
+.box-n {.column(4);.box;}
+.box-o {.column(5);.box;}
+.box-p {.column(1);.box;}
+.box-q {.column(2);.box;}
+.box-r {.column(3);.box;}
+.box-s {.column(6);.box;}
+.box-t {.column(3);.box;}
+.box-u {.column(2);.box;}
+.box-v {.column(2);.box;}
+.box-w {.column(2);.box;}
+.box-x {.column(2);.box;}
+.box-y {.column(2);.box;}
+.box-z {.column(2);.box;}

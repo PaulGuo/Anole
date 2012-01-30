@@ -21,6 +21,7 @@ body {
 .row(@x:@columns,@columns:@columns) {
 	.column(@x,@columns);
 	.clearfix;
+	.clear;
 }
 
 .column(@x,@columns:@columns) {
@@ -65,6 +66,15 @@ body {
 
 .hidden {
 	display:none;
+}
+
+.center {
+	margin:0 auto;
+	.clearfix;
+}
+
+.clear {
+	clear:both;
 }
 
 .border-radius(@radius:5px) {
