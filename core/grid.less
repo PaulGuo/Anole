@@ -27,7 +27,7 @@ body {
 .column(@x,@columns:@columns) {
 	display:inline;
 	float:left;
-	width:@totalwidth*((((@gutterwidth+@columnwidth)*@x)-@gutterwidth)/@gridsystemwidth);
+	width:@totalwidth*((((@gutterwidth+@columnwidth)*@x)-@gutterwidth)/@gridsystemwidth)-0.01;
 	margin:0 @totalwidth*((@gutterwidth*.5)/@gridsystemwidth);
 }
 
