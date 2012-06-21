@@ -1,0 +1,36 @@
+@import '../core/reset.css';
+@import '../core/grid.less?t=20120119003';
+@import './common.css';
+
+@columns:12;
+@columnwidth:60;
+@gutterwidth:60;
+@totalwidth:100%;
+
+header#top {
+	margin-bottom:1em;
+}
+
+#main {
+	.column(4);
+}
+
+#sidebar {
+	.column(4);
+}
+
+#left {
+	.column(4);
+}
+
+footer#footer {
+	.stretch;
+	margin-top:1em;
+}
+
+@media screen and (max-width:720px) {
+	#main,#sidebar,#left {
+		.column(12);
+		margin-bottom:1em;
+	}
+}

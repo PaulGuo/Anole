@@ -1,0 +1,51 @@
+@import '../core/reset.css';
+@import '../core/grid.less?t=20120120004';
+@import './common.css';
+
+@columns:12;
+@columnwidth:60;
+@gutterwidth:20;
+@totalwidth:100%;
+
+header#top {
+	margin-bottom:1em;
+}
+
+footer#footer {
+	.stretch;
+	margin-top:1em;
+}
+
+.wrapper {
+	width:@totalwidth;
+	min-width:500px;
+	padding:15px 0;
+	background:#fff;
+	font-family:Verdana;
+	font-size:10px;
+	line-height:22px;
+	.center;
+}
+
+.wrapper-a {
+	background:silver;
+}
+
+.left {
+	width:200px;
+	padding:0 10px 0;
+	float:left;
+	background:silver;
+}
+
+.right {
+	width:200px;
+	padding:0 10px 0;
+	float:right;
+	background:silver;
+}
+
+.main {
+	background:#ffe;
+	padding:0 230px;
+}
